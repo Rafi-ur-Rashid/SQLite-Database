@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rf.sqlite.MainActivity">
+
+    <EditText
+        android:id="@+id/namw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/showPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/namw"
+        android:layout_alignLeft="@+id/namw"
+        android:layout_alignStart="@+id/namw" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="InsertData"
+        android:text="Insert"
+        android:layout_above="@+id/showData"
+        android:layout_alignLeft="@+id/update"
+        android:layout_alignStart="@+id/update"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/showData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showData"
+        android:text="SHOW"
+        android:layout_above="@+id/flash"
+        android:layout_alignLeft="@+id/insert"
+        android:layout_alignStart="@+id/insert"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="flashData"
+        android:text="Flash"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/showData"
+        android:layout_alignStart="@+id/showData" />
+
+    <TextView
+        android:id="@+id/showPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateData"
+        android:text="update"
+        android:layout_above="@+id/insert"
+        android:layout_alignLeft="@+id/newPass"
+        android:layout_alignStart="@+id/newPass"
+        android:layout_marginBottom="21dp" />
+
+    <EditText
+        android:id="@+id/newPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newPass"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:onClick="deleteData"
+        android:text="delete" />
+
+</RelativeLayout>
